@@ -25,10 +25,18 @@ namespace Odev2
             urun2.Beden = "XL";
             urun2.Fiyat = 700;
 
+            Urun urun3 = new Urun();
+            urun3.Cinsiyet = "Erkek";
+            urun3.Marka = "Mavi";
+            urun3.Kategori = "Gömlek";
+            urun3.Beden = "L";
+            urun3.Fiyat = 599.98;
+
             Urun[] urunler = new Urun[]
             {
                 urun1,
-                urun2
+                urun2,
+                urun3
             };
 
             /*
@@ -38,11 +46,22 @@ namespace Odev2
             }
             */
 
+            /*
             for (int i = 0; i < urunler.Length; i++)
             {
                
                 Console.WriteLine(urunler[i].Cinsiyet + " " + urunler[i].Marka + " " + urunler[i].Kategori + " " + urunler[i].Beden + " Beden " + urunler[i].Fiyat + " TL ");
             }
+            */
+
+            
+           int i = 0;
+           while(i<=urunler.Length)
+            {
+                Console.WriteLine(urunler[i].Cinsiyet /*+ " " + urunler[i].Marka + " " + urunler[i].Kategori + " " + urunler[i].Beden + " Beden " + urunler[i].Fiyat + " TL "*/);
+                i++;
+            }
+            
 
             Console.ReadLine();
 
